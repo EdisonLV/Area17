@@ -1,0 +1,5 @@
+title: 'Reorder Posts'
+modelClass: Area17\News\Models\Post
+nameFrom: title
+toolbar:
+    buttons: reorder_toolbar

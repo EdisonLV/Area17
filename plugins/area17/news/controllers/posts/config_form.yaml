@@ -1,0 +1,14 @@
+name: Post
+modelClass: Area17\News\Models\Post
+form: $/area17/news/models/post/fields.yaml
+defaultRedirect: area17/news/posts
+create:
+    title: 'Create Post'
+    redirect: 'area17/news/posts/update/:id'
+    redirectClose: area17/news/posts
+update:
+    title: 'Edit Post'
+    redirect: area17/news/posts
+    redirectClose: area17/news/posts
+preview:
+    title: 'Preview Post'

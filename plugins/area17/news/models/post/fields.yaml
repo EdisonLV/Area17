@@ -1,0 +1,29 @@
+fields:
+    title:
+        label: Title
+        span: left
+        type: text
+    body:
+        label: Body
+        size: large
+        span: left
+        type: textarea
+    author:
+        label: Author
+        nameFrom: name
+        descriptionFrom: description
+        span: left
+        type: relation
+    image:
+        label: 'File upload'
+        mode: image
+        useCaption: 0
+        thumbOptions:
+            mode: crop
+            extension: auto
+        span: left
+        type: fileupload
+    is_featured:
+        label: Featured
+        span: left
+        type: switch

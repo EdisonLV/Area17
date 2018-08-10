@@ -1,0 +1,15 @@
+title: 'Manage Banners'
+modelClass: Area17\Banners\Models\Banner
+list: $/area17/banners/models/banner/columns.yaml
+recordUrl: 'area17/banners/banners/update/:id'
+noRecordsMessage: 'backend::lang.list.no_records'
+recordsPerPage: 20
+showSetup: true
+showCheckboxes: true
+defaultSort:
+    column: title
+    direction: asc
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'

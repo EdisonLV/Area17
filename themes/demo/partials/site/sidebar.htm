@@ -1,0 +1,17 @@
+[bannerComponent]
+banner = 1
+
+[trendingPosts]
+==
+<aside>
+    {% component 'localePicker' %}
+    <div class="ad-block">
+      <div>
+        {% component 'bannerComponent' %}
+      </div>
+    </div>
+    <div class="module list">
+      <h3>{{ 'Trending'|_ }}</h3>
+      {% component 'trendingPosts' %}
+    </div>
+</aside>

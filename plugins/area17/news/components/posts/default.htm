@@ -1,0 +1,29 @@
+<!-- First row -->
+<div class="row">
+  {% for post in posts|slice(0, 3) %}
+    {% if loop.first %}
+      <div class="col-6">
+        {% partial '@_post' post=post isTall=true %}
+      </div>
+    {% else %}
+      {% if loop.index == 2 %}
+        <div class="col-6">
+      {% endif %}
+        {% partial '@_post' post=post %}
+      {% if loop.last %}
+        </div>
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+</div>
+<!-- /First row -->
+
+{% for row in posts|slice(3, posts|length)|batch(2) %}
+  <div class="row">
+    {% for post in row %}
+      <div class="col-6">
+        {% partial '@_post' post=post %}
+      </div>
+    {% endfor %}
+  </div>
+{% endfor %}

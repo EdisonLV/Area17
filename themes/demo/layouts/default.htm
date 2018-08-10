@@ -1,0 +1,29 @@
+description = "Default layout"
+
+[localePicker]
+forceUrl = 1
+==
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Area17 :: {{ this.page.title|_ }}</title>
+    <meta name="description" content="{{ this.page.meta_description }}">
+    <meta name="title" content="{{ this.page.meta_title }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" type="text/css" media="all" href="{{ ['assets/stylesheets/normalize.css', 'assets/stylesheets/main.css']|theme }}" />
+    {% styles %}
+  </head>
+  <body>
+    <div id="wrapper">
+      <main>
+        {% page %}
+      </main>
+      {% partial 'site/sidebar' %}
+    </div>
+    <!-- Scripts -->
+    <script src="{{ ['assets/vendor/jquery.js']|theme }}"></script>
+    {% framework extras %}
+    {% scripts %}
+  </body>
+</html>

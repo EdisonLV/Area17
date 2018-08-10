@@ -1,0 +1,14 @@
+name: Author
+form: $/area17/news/models/author/fields.yaml
+modelClass: Area17\News\Models\Author
+defaultRedirect: area17/news/authors
+create:
+    title: 'Create Author'
+    redirect: 'area17/news/authors/update/:id'
+    redirectClose: area17/news/authors
+update:
+    title: 'Edit Author'
+    redirect: area17/news/authors
+    redirectClose: area17/news/authors
+preview:
+    title: 'Preview Author'

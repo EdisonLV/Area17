@@ -1,0 +1,28 @@
+1533937336a:1:{s:16:"site/sidebar.htm";a:7:{s:8:"fileName";s:16:"site/sidebar.htm";s:7:"content";s:329:"[bannerComponent]
+banner = 1
+
+[trendingPosts]
+==
+<aside>
+    {% component 'localePicker' %}
+    <div class="ad-block">
+      <div>
+        {% component 'bannerComponent' %}
+      </div>
+    </div>
+    <div class="module list">
+      <h3>{{ 'Trending'|_ }}</h3>
+      {% component 'trendingPosts' %}
+    </div>
+</aside>";s:5:"mtime";i:1533922021;s:6:"markup";s:280:"<aside>
+    {% component 'localePicker' %}
+    <div class="ad-block">
+      <div>
+        {% component 'bannerComponent' %}
+      </div>
+    </div>
+    <div class="module list">
+      <h3>{{ 'Trending'|_ }}</h3>
+      {% component 'trendingPosts' %}
+    </div>
+</aside>";s:4:"code";N;s:15:"bannerComponent";a:1:{s:6:"banner";s:1:"1";}s:13:"trendingPosts";a:0:{}}}

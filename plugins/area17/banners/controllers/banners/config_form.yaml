@@ -1,0 +1,14 @@
+name: Banner
+modelClass: Area17\Banners\Models\Banner
+form: $/area17/banners/models/banner/fields.yaml
+defaultRedirect: area17/banners/banners
+create:
+    title: 'Create Banner'
+    redirect: 'area17/banners/banners/update/:id'
+    redirectClose: area17/banners/banners
+update:
+    title: 'Edit Banner'
+    redirect: area17/banners/banners
+    redirectClose: area17/banners/banners
+preview:
+    title: 'Preview Banner'

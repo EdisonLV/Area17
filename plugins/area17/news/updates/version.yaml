@@ -1,0 +1,10 @@
+1.0.1:
+    - First version of News
+    - create_posts_table.php
+1.0.3:
+    - Added authors
+    - create_authors_table.php
+    - add_author_column.php
+1.0.4:
+    - Added featured column
+    - add_featured_column.php

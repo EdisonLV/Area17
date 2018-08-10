@@ -1,0 +1,18 @@
+<div class="asset-box {{ isTall ? 'tall' : '' }}">
+  <div class="asset-image">
+    <a href="#" target="_self" style="background-image: url({{ post.image.getPath() }})" title="{{ post.title }}"></a>
+  </div>
+  <div class="asset-content">
+    <header>
+      <h1><a href="#">{{ post.title }}</a></h1>
+    </header>
+    <footer>
+      <a href="#" class="button" style="background-image:url({{ post.author.avatar.getPath() }})"></a>
+      <ul>
+        <li>{{ post.author.name }}</li>
+        <li>{{ post.author.title }}</li>
+      </ul>
+      <a href="#" class="button share"></a>
+    </footer>
+  </div>
+</div>
